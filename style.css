@@ -219,10 +219,17 @@ a {
     display: grid;
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(12, 1fr);
-    height: 60vh;
+    height: 80vh;
+    gap: 1em
+}
+.sub-header-header {
+    display: flex;
+    place-items: center;
+    font-family: Merriweather;
+    font-size: 2.5em;
 }
 
-#limewash-card-a {
+#interior-card-a {
     display: flex;
     grid-row: 1 / span 3;
     grid-column: 1 / span 12;   
@@ -235,14 +242,14 @@ a {
     color: lightcyan
 }
 
-#limewash-card-a-header {
+#interior-card-a-header {
     font-size: 3.4em;
     text-align: center;  
     width: 33%;
     margin-top: 2vh;
     }
 
-#limewash-card-a-subheader {  
+#interior-card-a-subheader {  
     font-size: 1.7em;
     margin-top: -0.5vh;
     padding-top: 1vh;
@@ -548,4 +555,198 @@ footer {
     transform: scale(1);
     
   }
+}
+
+@media (max-width: 768px) {
+    #logo {
+        height: 10h;
+    }
+
+    nav {
+        height: 10vh;
+    }
+    .nav-links {
+        margin-right: 5vw;
+        padding-top: 2vh;
+        font-size: .9em;
+    }
+    nav li {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }  
+    #main-grid {
+        height: 70vh;
+    }
+    .card-a {
+        font-size: 1.3em;
+    }
+
+
+
+    .card-a {
+        font-size: 2em;
+    }
+
+    #call-to-action {
+        width: 40vw;
+        height: 6vh;
+        font-size: 18px;
+    }
+    .subheaders {
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        height: 70vh;
+        gap: 1em;
+    }
+
+   
+
+    #interior-card-a {
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 12;   
+        height: 30vh;
+        
+    }
+    
+    #interior-card-a-subheader {  
+        font-size: 1.2em;
+        margin-top: -0.5vh;
+        padding-top: 1vh;
+        padding-left: 2vw;
+        padding-right: 1vw;
+        flex-direction: flex-start;
+        line-height: 1.25;
+        align-content: center;
+    }
+    #exterior-card-b {
+        grid-row: 5 / span 3;
+        grid-column: 1 / span 12;
+        height: 30vh;
+    }
+    
+    #exterior-card-b-subheader {
+        font-size: 1.2em;
+        margin-top: -0.5vh;
+        padding-top: 1vh;
+        padding-left: 2vw;
+        padding-right: 1vw;
+        flex-direction: flex-start;
+        line-height: 1.25;
+        align-content: center;
+    }
+    #chimney-card-c {
+        grid-row: 9 / span 3;
+        grid-column: 1 / span 12;
+        height: 30vh;
+    }
+    
+    #chimney-card-c-subheader {
+        font-size: 1.2em;
+        margin-top: -0.5vh;
+        padding-top: 1vh;
+        padding-left: 2vw;
+        padding-right: 1vw;
+        flex-direction: flex-start;
+        line-height: 1.25;
+        align-content: center;
+    }
+}
+
+@media (max-width: 840px) {
+    body {
+        margin: 0;
+        width: 100vw;
+        box-sizing: border-box ; 
+        padding-right: 5vw;
+        padding-left: 5vw;
+        overflow-x: hidden;
+        background-color: aliceblue;
+         }
+    #logo {
+        height: 10vh;
+    }
+    nav {
+        height: 11vh;
+    }
+    .nav-links {
+        margin-right: 5vw;
+        padding-top: 2vh;
+        font-size: 1.1em;
+    }
+    nav li {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }  
+    #main-grid {
+        height: 70vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr)
+    }
+    .card-a {
+        margin-top: 5vh;
+        font-size: 2.5em;
+        grid-row: 1 / span 5;
+        grid-column: 1 / span 12;
+    }
+    #card-b {
+        margin-top: 10vh;
+        grid-column: 1 / span 4;
+        grid-row: 6 / span 8;
+        }
+    .card-c {
+        margin-top: 10vh;
+        grid-column: 5 / span 4;
+        grid-row: 6 / span 8;
+} 
+    .card-d {
+        margin-top: 10vh;
+        grid-column: 9 / span 4;
+        grid-row: 6 / span 8;
+    }
+    .card-e {
+        display: none;
+    }
+    #call-to-action {
+        width: 50vw;
+        height: 6vh;
+        font-size: 18px;
+        margin-bottom: 20vh;
+        margin-top: 20vh;
+    }
+    #sub-headers {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+.sub-header-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+    font-size: 0.9m;
+    font-family: Merriweather;
+    font-weight: 600;
+    text-align: center;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+}
+
+
+#interior-card-a-header, #exterior-card-b-header, #chimney-card-c-header {
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center; 
+    justify-content: center;
+}
+/* #chimney-card-c-header {
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center; 
+    justify-content: center;
+    height: 5vh;
+    */
 }
