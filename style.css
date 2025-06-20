@@ -1,3 +1,4 @@
+
 html {
     margin: 0;
     width: 98vw;
@@ -208,6 +209,8 @@ a {
     transform: scale(1.1);
 }
 
+
+
 .call-to-action-text {
     color: aliceblue
 }
@@ -302,15 +305,19 @@ a {
 }
 
 
-#chimney-card-c-header {
-    font-size: 3.4em;
+#chimney-card-c-header {      
     margin-top: 2vh;
-    width: 33%;
+    width: 35%;
     text-align: center; 
 }
 
+#chimney-card-c-header a {
+    font-size: .9em;
+    margin-right: 1.1vw;
+}
+
 #chimney-card-c-subheader {
-    font-size: 1.8em;
+    font-size: 1.2em;
     margin-top: -0.5vh;
     padding-top: 1vh;
     padding-left: 2vw;
@@ -552,7 +559,11 @@ footer {
     header {
         height: 7vh;
         font-size: 1.1em;
-    
+    }
+     nav {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100vw;   
     }
     #logo {
         height: 8vh;
@@ -561,7 +572,6 @@ footer {
         box-shadow: 3px 3px 4px rgba(0, 0, 0, .4);
         margin-top: .5vh;
     }
-
     ul li{
         font-size: .6em;
         margin-left: 0;
@@ -570,10 +580,14 @@ footer {
     }
 
     
+   
+  
     #main-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(9, 1fr);
+        height: 100vh;
+        margin-top: -2vh;
     }
     .card-a {
         grid-row: 2 / span 1;    
@@ -596,6 +610,7 @@ footer {
     .card-c {
         display: none;
     }
+
     #call-to-action {
         margin-top: -22vh;
         width: 80vw;
@@ -609,15 +624,12 @@ footer {
         height: 65vh;
         grid-template-rows: repeat(16, 1fr);
         grid-template-columns: repeat(12, 1fr);
-       
         gap: 1.15em;
     }
 
     #interior-card-a {
        grid-row: 1 / span 5;
         grid-column: 1 / span 12;   
-
-        
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://images.squarespace-cdn.com/content/v1/666d965837ba6f431688ee78/b5aa7689-b4e4-4a38-af75-99f482a5d94b/Interior+Limewashed+Walls+(With+AI+Desk).jpg");
     }
     #interior-card-a-header {
@@ -645,7 +657,6 @@ footer {
         text-align: center;
         width: 25%;
     }
-
     #exterior-card-b-subheader {
         font-size: 1.31em;
         margin-top: -0.5vh;
@@ -656,19 +667,16 @@ footer {
         line-height: 1.25;
         align-content: center;
     }
-
     #chimney-card-c {
         grid-row: 11 / span 5;
         grid-column: 1 / span 12;
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://www.florentinemasonry.com/_Media/dsc_0090-3_med_hr.jpeg");
     }
-
     #chimney-card-c-header {
         font-size: 1.2em;   
         text-align: center;
         width: 25%;
     }
-
     #chimney-card-c-subheader {
         font-size: 1.17em;
         margin-top: -0.5vh;
@@ -680,16 +688,52 @@ footer {
         align-content: center;
     }
 
-    nav {
-        margin-right: 0;
-        margin-left: 0;
-        width: 100vw;   
-    }
-    #main-grid {
-        height: 100vh;
-        margin-top: -2vh;
-    }
   
+
+    #why-choose-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        max-height: 80vh;
+        gap: 1.2em;
+    }
+
+    #why-choose-card-one {
+        font-size: 1.7rem;
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 12 
+    }
+    #why-choose-card-two {
+        padding: 0 1.2vw;;
+        padding-top: 1vh;
+        width: 100%;
+        font-size: .8em;
+        grid-row: 4 / span 4;
+        grid-column: 1 / span 6;
+        height: 100%;
+    }
+    #why-choose-card-three {
+        grid-row: 4 /span 4;
+        grid-column: 7 / span 6;
+        font-size: .9em;
+        padding-top: .3vh;
+        height: 100%;
+     
+    }
+    #why-choose-card-four {
+        grid-row: 8 / span 4;
+        grid-column: 1 / span 6;
+        font-size: .9em;
+        width: 100%;
+        height: 100%;
+    }
+    #why-choose-card-five {
+        grid-row: 8 / span 4;
+        grid-column: 7 / span 6;
+        height: 100%;
+        font-size: .8em;
+    }
+
     footer {
         position: fixed;
         bottom: 0;
@@ -725,7 +769,7 @@ footer {
      align-items: center;
      justify-content: space-evenly;
     }
-
+    
 
 
 }
